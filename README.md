@@ -4,6 +4,13 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 
 **Lưu ý:** Không sao chép dưới mọi hình thức
 
+## Team members
+1. Nguyễn Hoàng Long - 19521788 (Leader)
+2. Trần Nguyễn Hạnh Nguyên - 19521923
+
+## Dataset
++ Link dataset: https://www.kaggle.com/imakash3011/customer-personality-analysis
+  
 ## Technologies
 + SQL Server Analysis Services
 
@@ -16,9 +23,9 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 
 (Continue)
 
-## Team members
-1. Nguyễn Hoàng Long - 19521788 (Leader)
-2. Trần Nguyễn Hạnh Nguyên - 19521923
+## References
+1. [The Analytics Setup Guidebook](https://www.holistics.io/books/setup-analytics/a-modern-analytics-stack/)
+2. [The Data Warehouse Toolkit, 3rd Edition](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/data-warehouse-dw-toolkit/)
 
 ## Contact information
 [Hoàng Long](https://www.facebook.com/nghoanglong.17dec/)
