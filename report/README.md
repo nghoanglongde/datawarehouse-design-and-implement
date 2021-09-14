@@ -13,7 +13,7 @@ Link: [Word online](https://uithcm-my.sharepoint.com/:w:/r/personal/19521788_ms_
 + giao thông -> trang 2
 2. Trang nhận xét của giáo viên
 3. Chương 1 - Giới thiệu tổng quan đề tài
- 1. Phát biểu về dữ liệu
+  + Phát biểu về dữ liệu
      1. Lý do chọn đề tài
         + video -> trang 8, phần đặt vấn đề
         + giao thông -> trang 9
@@ -30,7 +30,7 @@ Link: [Word online](https://uithcm-my.sharepoint.com/:w:/r/personal/19521788_ms_
         + video -> trang 14, phần mô tả các thuộc tính
      4. Dữ liệu sau khi xử lý
         + store -> trang 5, phần 1.3
- 2. Xây dựng kho dữ liệu
+  + Xây dựng kho dữ liệu
     1. Thiết kế lược đồ (star schema)
         + giao thông -> trang 12, phần 1.3.1
         + store -> trang 7, phần 2.1
