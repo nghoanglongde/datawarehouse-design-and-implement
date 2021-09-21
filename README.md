@@ -9,7 +9,7 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 2. Trần Nguyễn Hạnh Nguyên - 19521923
 
 ## Dataset
-+ Link dataset: https://www.kaggle.com/imakash3011/customer-personality-analysis
++ Link dataset: https://www.kaggle.com/jackdaoud/marketing-data
   
 ## Technologies
 + SQL Server Analysis Services
