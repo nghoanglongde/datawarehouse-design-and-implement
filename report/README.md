@@ -46,6 +46,7 @@ Link: [Word online](https://uithcm-my.sharepoint.com/:w:/r/personal/19521788_ms_
         + store -> trang 13, phần 3
         + video -> trang 18, phần 4
 4. Chương 2 - Tích hợp dữ liệu vào kho (SSIS)
+    + Tài liệu tham khảo - SQL Server 2012 Tutorials: Analysis Services - Multidimentional ModelingFile -> trên course, đọc cái này đầu tiên
     + store -> trang 14, chương 2
     + covid -> trang 9, chương 2
     + giao thông -> trang 19, chương 2
