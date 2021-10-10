@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{08A80332-32B9-4F89-B222-DE97F8E6298A}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{D1F69D3A-787E-4B1D-A092-7A3D1F39F164}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4586,25 +4586,30 @@ where [refTable].[Date_ID] = ?</property>
                       cachedName="MntGolds"
                       lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[MntGolds]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[NumDealsPurchases]"
+                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[AcceptedCmp3]"
                       cachedDataType="i4"
-                      cachedName="NumDealsPurchases"
-                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumDealsPurchases]" />
+                      cachedName="AcceptedCmp3"
+                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp3]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[NumWebPurchases]"
+                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[AcceptedCmp4]"
                       cachedDataType="i4"
-                      cachedName="NumWebPurchases"
-                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumWebPurchases]" />
+                      cachedName="AcceptedCmp4"
+                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp4]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[NumCatalogPurchases]"
+                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[AcceptedCmp5]"
                       cachedDataType="i4"
-                      cachedName="NumCatalogPurchases"
-                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumCatalogPurchases]" />
+                      cachedName="AcceptedCmp5"
+                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp5]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[NumStorePurchases]"
+                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[AcceptedCmp1]"
                       cachedDataType="i4"
-                      cachedName="NumStorePurchases"
-                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumStorePurchases]" />
+                      cachedName="AcceptedCmp1"
+                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp1]" />
+                    <inputColumn
+                      refId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input].Columns[AcceptedCmp2]"
+                      cachedDataType="i4"
+                      cachedName="AcceptedCmp2"
+                      lineageId="Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp2]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4618,25 +4623,25 @@ where [refTable].[Date_ID] = ?</property>
                   synchronousInputId="Package\Tạo bảng Fact\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Orders]"
+                      refId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Campaigns_Accepted]"
                       dataType="i4"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Orders]"
-                      name="Total_Orders"
+                      lineageId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Campaigns_Accepted]"
+                      name="Total_Campaigns_Accepted"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumDealsPurchases]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumWebPurchases]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumWebPurchases]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumCatalogPurchases]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[NumStorePurchases]}</property>
+                          name="Expression">#{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp3]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp4]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp5]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp1]} + #{Package\Tạo bảng Fact\OLE DB Source.Outputs[OLE DB Source Output].Columns[AcceptedCmp2]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">NumDealsPurchases + NumWebPurchases + NumWebPurchases + NumCatalogPurchases + NumStorePurchases</property>
+                          name="FriendlyExpression">AcceptedCmp3 + AcceptedCmp4 + AcceptedCmp5 + AcceptedCmp1 + AcceptedCmp2</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -4813,12 +4818,6 @@ where [refTable].[Date_ID] = ?</property>
                       externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[MntSweets]"
                       lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[MntSweets]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[MntGolds]"
-                      cachedDataType="r8"
-                      cachedName="MntGolds"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[MntGolds]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[MntGolds]" />
-                    <inputColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[NumDealsPurchases]"
                       cachedDataType="i4"
                       cachedName="NumDealsPurchases"
@@ -4830,6 +4829,12 @@ where [refTable].[Date_ID] = ?</property>
                       cachedName="NumWebPurchases"
                       externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[NumWebPurchases]"
                       lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[NumWebPurchases]" />
+                    <inputColumn
+                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[MntGolds]"
+                      cachedDataType="r8"
+                      cachedName="MntGolds"
+                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[MntGolds]"
+                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[MntGolds]" />
                     <inputColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[NumCatalogPurchases]"
                       cachedDataType="i4"
@@ -4849,36 +4854,6 @@ where [refTable].[Date_ID] = ?</property>
                       externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[NumWebVisitsMonth]"
                       lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[NumWebVisitsMonth]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[AcceptedCmp3]"
-                      cachedDataType="i4"
-                      cachedName="AcceptedCmp3"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp3]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[AcceptedCmp3]" />
-                    <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[AcceptedCmp4]"
-                      cachedDataType="i4"
-                      cachedName="AcceptedCmp4"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp4]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[AcceptedCmp4]" />
-                    <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[AcceptedCmp5]"
-                      cachedDataType="i4"
-                      cachedName="AcceptedCmp5"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp5]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[AcceptedCmp5]" />
-                    <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[AcceptedCmp1]"
-                      cachedDataType="i4"
-                      cachedName="AcceptedCmp1"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp1]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[AcceptedCmp1]" />
-                    <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[AcceptedCmp2]"
-                      cachedDataType="i4"
-                      cachedName="AcceptedCmp2"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp2]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[AcceptedCmp2]" />
-                    <inputColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[Response]"
                       cachedDataType="i4"
                       cachedName="Response"
@@ -4891,11 +4866,11 @@ where [refTable].[Date_ID] = ?</property>
                       externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Complain]"
                       lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Complain]" />
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[Total_Orders]"
+                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[Total_Campaigns_Accepted]"
                       cachedDataType="i4"
-                      cachedName="Total_Orders"
-                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Total_Orders]"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Orders]" />
+                      cachedName="Total_Campaigns_Accepted"
+                      externalMetadataColumnId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Total_Campaigns_Accepted]"
+                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Campaigns_Accepted]" />
                     <inputColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].Columns[Total_Spent]"
                       cachedDataType="r8"
@@ -4963,26 +4938,6 @@ where [refTable].[Date_ID] = ?</property>
                       dataType="i4"
                       name="NumWebVisitsMonth" />
                     <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp3]"
-                      dataType="i4"
-                      name="AcceptedCmp3" />
-                    <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp4]"
-                      dataType="i4"
-                      name="AcceptedCmp4" />
-                    <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp5]"
-                      dataType="i4"
-                      name="AcceptedCmp5" />
-                    <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp1]"
-                      dataType="i4"
-                      name="AcceptedCmp1" />
-                    <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[AcceptedCmp2]"
-                      dataType="i4"
-                      name="AcceptedCmp2" />
-                    <externalMetadataColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Response]"
                       dataType="i4"
                       name="Response" />
@@ -4991,9 +4946,9 @@ where [refTable].[Date_ID] = ?</property>
                       dataType="i4"
                       name="Complain" />
                     <externalMetadataColumn
-                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Total_Orders]"
+                      refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Total_Campaigns_Accepted]"
                       dataType="i4"
-                      name="Total_Orders" />
+                      name="Total_Campaigns_Accepted" />
                     <externalMetadataColumn
                       refId="Package\Tạo bảng Fact\Fact_MarketingAnalytic.Inputs[OLE DB Destination Input].ExternalColumns[Total_Spent]"
                       dataType="r8"
@@ -5887,10 +5842,10 @@ where [refTable].[Date_ID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tạo bảng Fact\Sort.Inputs[Sort Input].Columns[Total_Orders]"
+                      refId="Package\Tạo bảng Fact\Sort.Inputs[Sort Input].Columns[Total_Campaigns_Accepted]"
                       cachedDataType="i4"
-                      cachedName="Total_Orders"
-                      lineageId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Orders]">
+                      cachedName="Total_Campaigns_Accepted"
+                      lineageId="Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Campaigns_Accepted]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6205,16 +6160,16 @@ where [refTable].[Date_ID] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Orders]"
+                      refId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Campaigns_Accepted]"
                       dataType="i4"
-                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Orders]"
-                      name="Total_Orders">
+                      lineageId="Package\Tạo bảng Fact\Sort.Outputs[Sort Output].Columns[Total_Campaigns_Accepted]"
+                      name="Total_Campaigns_Accepted">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Orders]}</property>
+                          name="SortColumnId">#{Package\Tạo bảng Fact\Derived Column.Outputs[Derived Column Output].Columns[Total_Campaigns_Accepted]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -6337,14 +6292,18 @@ where [refTable].[Date_ID] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="422.4,103.2"
-          Size="422.4,146.4"
+          PanelSize="422.4,120"
+          Size="422.4,163.2"
           Id="Package\Sequence Container"
           TopLeft="177.857145886032,141.470590219366" />
         <NodeLayout
           Size="145.6,41.6"
           Id="Package\Tạo bảng Fact"
           TopLeft="316.428576817318,336.470592954167" />
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Tạo các Foreign Keys"
+          TopLeft="302.857148014769,428.235300123485" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="391.271432762,84.4235300123485">
@@ -6389,10 +6348,6 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178.4,41.6"
-          Id="Package\Tạo các Foreign Keys"
-          TopLeft="302.857148014769,428.235300123485" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="390.642862416044,378.070592954167">
@@ -6428,33 +6383,17 @@ where [refTable].[Date_ID] = ?</property>
           Id="Package\Làm sạch dữ liệu\Sort"
           TopLeft="292.142862118021,246.235297571004" />
         <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Làm sạch dữ liệu\Null_Data Table"
+          TopLeft="507.857151505899,119.294119320114" />
+        <NodeLayout
           Size="154.4,41.6"
           Id="Package\Làm sạch dữ liệu\Conditional Split"
           TopLeft="261.428575880674,119.294119320114" />
-        <EdgeLayout
-          Id="Package\Làm sạch dữ liệu.Paths[NotNull_Output]"
-          TopLeft="339.785718999347,160.894119320114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,85.3411782508902"
-              Start="0,0"
-              End="0,77.8411782508902">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,77.8411782508902" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-34.71638671875,33.1159016254451,69.4327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Làm sạch dữ liệu\Clean_Data Table"
+          TopLeft="262.857147333573,359.411769746496" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Làm sạch dữ liệu\OLE DB Source"
@@ -6481,10 +6420,6 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Làm sạch dữ liệu\Null_Data Table"
-          TopLeft="507.857151505899,119.294119320114" />
         <EdgeLayout
           Id="Package\Làm sạch dữ liệu.Paths[Null_Output]"
           TopLeft="415.828575880674,140.094119320114">
@@ -6509,10 +6444,30 @@ where [refTable].[Date_ID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Làm sạch dữ liệu\Clean_Data Table"
-          TopLeft="262.857147333573,359.411769746496" />
+        <EdgeLayout
+          Id="Package\Làm sạch dữ liệu.Paths[NotNull_Output]"
+          TopLeft="339.785718999347,160.894119320114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85.3411782508902"
+              Start="0,0"
+              End="0,77.8411782508902">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.8411782508902" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.71638671875,33.1159016254451,69.4327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Làm sạch dữ liệu.Paths[Sort Output]"
           TopLeft="342.300004725797,287.835297571004">
@@ -6538,6 +6493,45 @@ where [refTable].[Date_ID] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Làm sạch dữ liệu\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Làm sạch dữ liệu\Null_Data Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Làm sạch dữ liệu\Clean_Data Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Dim_Customer">
     <LayoutInfo>
@@ -6551,28 +6545,6 @@ where [refTable].[Date_ID] = ?</property>
           Size="148,41.6"
           Id="Package\Sequence Container\Dim_Customer\Dim_Customer"
           TopLeft="563.636363636364,80" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Dim_Customer.Paths[Sort Output]"
-          TopLeft="431.781818181818,98.3454545454545">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="131.854545454546,0"
-              Start="0,0"
-              End="124.354545454546,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="124.354545454546,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="152.8,48"
           Id="Package\Sequence Container\Dim_Customer\OLE DB Source"
@@ -6599,11 +6571,46 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Dim_Customer.Paths[Sort Output]"
+          TopLeft="431.781818181818,98.3454545454545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131.854545454546,0"
+              Start="0,0"
+              End="124.354545454546,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="124.354545454546,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Dim_Customer\Dim_Customer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Dim_Customer\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6625,6 +6632,10 @@ where [refTable].[Date_ID] = ?</property>
           Id="Package\Sequence Container\Dim_Date\Aggregate"
           TopLeft="307,113" />
         <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence Container\Dim_Date\OLE DB Source"
+          TopLeft="50,109" />
+        <NodeLayout
           Size="97.6,41.6"
           Id="Package\Sequence Container\Dim_Date\Sort"
           TopLeft="549,332" />
@@ -6632,6 +6643,54 @@ where [refTable].[Date_ID] = ?</property>
           Size="152.8,41.6"
           Id="Package\Sequence Container\Dim_Date\Derived Column"
           TopLeft="518,208" />
+        <NodeLayout
+          Size="124.8,41.6"
+          Id="Package\Sequence Container\Dim_Date\Dim_Date"
+          TopLeft="540,446" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Dim_Date.Paths[Sort Output]"
+          TopLeft="600.1,373.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.4"
+              Start="0,0"
+              End="0,64.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Dim_Date.Paths[OLE DB Source Output]"
+          TopLeft="199.6,131.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107.4,0"
+              Start="0,0"
+              End="99.9,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="99.9,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Dim_Date.Paths[Derived Column Output]"
           TopLeft="596.1,249.6">
@@ -6688,260 +6747,11 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Sequence Container\Dim_Date\OLE DB Source"
-          TopLeft="50,109" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Dim_Date.Paths[OLE DB Source Output]"
-          TopLeft="199.6,131.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="107.4,0"
-              Start="0,0"
-              End="99.9,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="99.9,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="124.8,41.6"
-          Id="Package\Sequence Container\Dim_Date\Dim_Date"
-          TopLeft="540,446" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Dim_Date.Paths[Sort Output]"
-          TopLeft="600.1,373.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72.4"
-              Start="0,0"
-              End="0,64.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Tạo bảng Fact">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Tạo bảng Fact\OLE DB Source"
-          TopLeft="67,141" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Tạo bảng Fact\Derived Column"
-          TopLeft="296,180" />
-        <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Tạo bảng Fact\Customer_Lookup"
-          TopLeft="545,184" />
-        <EdgeLayout
-          Id="Package\Tạo bảng Fact.Paths[Derived Column Output]"
-          TopLeft="448.8,202.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="96.2,0"
-              Start="0,0"
-              End="88.7,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="88.7,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tạo bảng Fact.Paths[OLE DB Source Output]"
-          TopLeft="216.6,161.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="79.4000000000001,39.0000000000001"
-              Start="0,0"
-              End="71.9000000000001,39.0000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="35.7,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35.7,0"
-                    Point2="39.7,0"
-                    Point3="39.7,4" />
-                  <mssgle:LineSegment
-                    End="39.7,35.0000000000001" />
-                  <mssgle:CubicBezierSegment
-                    Point1="39.7,35.0000000000001"
-                    Point2="39.7,39.0000000000001"
-                    Point3="43.7,39.0000000000001" />
-                  <mssgle:LineSegment
-                    End="71.9000000000001,39.0000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="140,41.6"
-          Id="Package\Tạo bảng Fact\Date_Lookup"
-          TopLeft="564,289" />
-        <EdgeLayout
-          Id="Package\Tạo bảng Fact.Paths[Lookup Match Output]"
-          TopLeft="630.3,225.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.4000000000001"
-              Start="0,0"
-              End="0,55.9000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.9000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,22.1453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="136,46.4"
-          Id="Package\Tạo bảng Fact\Sort"
-          TopLeft="569,398" />
-        <EdgeLayout
-          Id="Package\Tạo bảng Fact.Paths[Lookup Match Output1]"
-          TopLeft="635.5,330.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,67.4"
-              Start="0,0"
-              End="0,59.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,24.1453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="187.2,41.6"
-          Id="Package\Tạo bảng Fact\Fact_MarketingAnalytic"
-          TopLeft="547,515" />
-        <EdgeLayout
-          Id="Package\Tạo bảng Fact.Paths[Sort Output]"
-          TopLeft="638.8,444.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,70.6"
-              Start="0,0"
-              End="0,63.1">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.1" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Làm sạch dữ liệu\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Làm sạch dữ liệu\Null_Data Table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Làm sạch dữ liệu\Clean_Data Table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Dim_Customer\OLE DB Source">
+    design-time-name="Package\Sequence Container\Dim_Date\Dim_Date">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6966,19 +6776,164 @@ where [refTable].[Date_ID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Dim_Date\Dim_Date">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Tạo bảng Fact">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Tạo bảng Fact\OLE DB Source"
+          TopLeft="28.5714290579971,174.647060936297" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Tạo bảng Fact\Derived Column"
+          TopLeft="262.857147333573,183.529414338637" />
+        <EdgeLayout
+          Id="Package\Tạo bảng Fact.Paths[OLE DB Source Output]"
+          TopLeft="178.171429057997,195.447060936298">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84.6857182755764,8.88235340233908"
+              Start="0,0"
+              End="77.1857182755764,8.88235340233908">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="38.3428591377882,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.3428591377882,0"
+                    Point2="42.3428591377882,0"
+                    Point3="42.3428591377882,4" />
+                  <mssgle:LineSegment
+                    End="42.3428591377882,4.88235340233908" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.3428591377882,4.88235340233908"
+                    Point2="42.3428591377882,8.88235340233908"
+                    Point3="46.3428591377882,8.88235340233908" />
+                  <mssgle:LineSegment
+                    End="77.1857182755764,8.88235340233908" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Tạo bảng Fact\Customer_Lookup"
+          TopLeft="497.8571513356,182.000002552481" />
+        <EdgeLayout
+          Id="Package\Tạo bảng Fact.Paths[Derived Column Output]"
+          TopLeft="415.657147333574,203.564708445559">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.2000040020262,0"
+              Start="0,0"
+              End="74.7000040020262,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="74.7000040020262,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Tạo bảng Fact\Date_Lookup"
+          TopLeft="509.285722958799,299.000004193362" />
+        <EdgeLayout
+          Id="Package\Tạo bảng Fact.Paths[Lookup Match Output]"
+          TopLeft="579.371437147199,223.600002552481">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.4000016408809"
+              Start="0,0"
+              End="0,67.9000016408809">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.9000016408809" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,28.1453133204404,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="135.2,46.4"
+          Id="Package\Tạo bảng Fact\Sort"
+          TopLeft="515.873024658281,403.594776902094" />
+        <EdgeLayout
+          Id="Package\Tạo bảng Fact.Paths[Lookup Match Output1]"
+          TopLeft="581.37937380854,340.600004193362">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.9947727087322"
+              Start="0,0"
+              End="0,55.4947727087322">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.4947727087322" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,21.9426988543661,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="187.2,41.6"
+          Id="Package\Tạo bảng Fact\Fact_MarketingAnalytic"
+          TopLeft="495.535722724637,506.617654163945" />
+        <EdgeLayout
+          Id="Package\Tạo bảng Fact.Paths[Sort Output]"
+          TopLeft="586.304373691459,449.994776902094">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.6228772618504"
+              Start="0,0"
+              End="0,49.1228772618504">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.1228772618504" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Tạo bảng Fact\OLE DB Source">
     <Properties>
