@@ -8,7 +8,7 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
-        <StartObjectID>Dim_Books.dtsx</StartObjectID>
+        <StartObjectID>Dim_Book.dtsx</StartObjectID>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
@@ -17,7 +17,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2021-10-11T02:37:35.1167966Z</Value>
+            <Value xsi:type="xsd:dateTime">2021-10-11T04:33:09.4730643Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationSensitiveValues>
       </Options>

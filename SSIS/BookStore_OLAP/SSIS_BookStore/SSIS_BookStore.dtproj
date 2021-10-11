@@ -14,40 +14,40 @@
     <Manifest>
       <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
-          <SSIS:Property SSIS:Name="ID">{fefa06de-65c5-4bd0-9c4a-0817f9fd109d}</SSIS:Property>
+          <SSIS:Property SSIS:Name="ID">{f5868349-df04-4ea7-a233-3d0667877993}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">SSIS_BookStore</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="CreationDate">2021-10-11T09:25:35.8985756+07:00</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreationDate">2021-10-11T11:22:57.8967497+07:00</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorName">DESKTOP-RI1DGNT\nghoanglong</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-RI1DGNT</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmQ6szL5mbUOREs1x3est6gAAAAACAAAAAAAQZgAAAAEAACAAAADz2KxVwqVCPlJb+YTzajiruOvExLBb9EgA3sL9lfln9wAAAAAOgAAAAAIAACAAAACoZczOaLBaz+ZH2bJHF5T/etSdhS9DY5hKiyx1Ddz+U5AAAADqX/50BBliAgreIJZU3ZKfATX4QUdvlfQXovSPdTKHx/9nz43FjDRTvTSa85vXN7NKV/tSEvUiycA/UxPg6IVQuzx4Vvf4KcjCorQ/pu+R1Vag/yWGbXOJsgcsvcYQlVtE9iPytKU6tNYmopbG7P0dvsvN4YYfzGxfkdXjdWZeu30RaW5ZW8K5htYHP//aYPFAAAAAUB1jb7p5IXpmIsCeuuexTp8BsMGbrzMCwGU2WLngkPkkHDZS/3ZVvckHFMczt79t+7dereSfICqQOGmSYzrWrw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmQ6szL5mbUOREs1x3est6gAAAAACAAAAAAAQZgAAAAEAACAAAACq+dCp0K8fKkTjmmKmtyJYbx3mxJxHd3c9y/SfBQbfwQAAAAAOgAAAAAIAACAAAADxcYsJugsulkHzPVfDO7RzBKjVjhzcjSNH2oe5cqGnu5AAAACRa/D1GTQH/gRCK3e7r1uzpyM9mwKY6ZgnHRRS7n36SCujc4Ap0LV3uOqjLAYrq0JM5jrH5LLdfQu1nf3rlFqm2BfhvZQiAt7vWFDmicDHS8SA2RBnZL4G9O3GFTUl0XURu4xVO8knkya2lgkOEHmqGBXejJ4ecKv9Y4YniKoID+TMwfte7FsfNZwaxOJP/aFAAAAAAJLIhtrorL/jMlszOD6Eymaqme74tEZ4DVZhI0kyYZOoiUf3wc2OKVKQX6Oup7lqVjV7/Hxa3RNGE5RD07TvaQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Fact_BookStore.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Dim_Customer.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Dim_Books.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Dim_Book.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Fact_BookStore.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{8A1BBE82-17AE-48B7-AD49-AFC8C01D0A39}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{7B4C0AFD-5371-4491-9EA2-2691D4FDF50A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3AE82874-5711-4327-8CB6-4A6AC51D0D39}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{25FE2C91-CB44-4269-8C94-26365F51D419}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -353,14 +353,14 @@
             </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="Dim_Customer.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D91C695E-A3D7-4FF1-B350-3D7671618711}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{CD8E67FB-6DDD-4E69-AF03-645F11AE20DB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2EE4CBB2-2985-411E-8BC2-6104E0FCEBC9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{65460567-1205-443E-84B2-FE5FAC39A8B5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -649,16 +649,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Dim_Books.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Dim_Book.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D59EB784-A5A9-4CB6-B3BD-31313084EC7E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{A4469FA5-3FAB-49F6-B1C8-54069C1CE6E1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{5305EEEB-678D-4E75-8FD6-A5162DB0EED4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8ABEC19B-DFFA-4881-9E0C-34DAF0B8F2D8}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -989,7 +989,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2021-10-11T02:37:35.1150824Z</Value>
+            <Value xsi:type="xsd:dateTime">2021-10-11T04:33:09.4710614Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationValues>
       </Options>

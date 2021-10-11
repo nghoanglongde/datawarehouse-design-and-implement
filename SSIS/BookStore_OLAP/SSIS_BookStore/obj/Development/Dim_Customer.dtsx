@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="10/11/2021 9:39:00 AM"
+  DTS:CreationDate="10/11/2021 11:34:06 AM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-RI1DGNT"
   DTS:CreatorName="DESKTOP-RI1DGNT\nghoanglong"
-  DTS:DTSID="{D91C695E-A3D7-4FF1-B350-3D7671618711}"
+  DTS:DTSID="{CD8E67FB-6DDD-4E69-AF03-645F11AE20DB}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
   DTS:VersionBuild="1"
-  DTS:VersionGUID="{2EE4CBB2-2985-411E-8BC2-6104E0FCEBC9}">
+  DTS:VersionGUID="{65460567-1205-443E-84B2-FE5FAC39A8B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-RI1DGNT.BookStore_DW]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{DDD5C158-04E8-4794-8B3C-88F39A4C7C55}"
+      DTS:DTSID="{CBEEAFB2-5B5B-44D4-A841-2D8BA7A2D849}"
       DTS:ObjectName="DESKTOP-RI1DGNT.BookStore_DW">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -31,7 +31,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{A82AD3E6-3E1A-4A4E-8E3D-EFD917DB2ED7}"
+      DTS:DTSID="{729D5A36-4580-4504-B53F-57BD9C56447F}"
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -47,7 +47,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{3CCC218B-09AA-453B-AF15-011C642EEE10}"
+      DTS:DTSID="{9419B3CD-15B0-4E75-8116-8B026DC145B9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -538,7 +538,7 @@
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Data Flow Task"
-          TopLeft="40.7142864076459,135.352943074744" />
+          TopLeft="57.1428581159943,97.8823543139395" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -550,25 +550,25 @@
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Data Flow Task\Excel Source"
-          TopLeft="32.8571434166967,98.6470602070172" />
+          TopLeft="67.8571440127431,84.8823541316194" />
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\Data Flow Task\Sort"
-          TopLeft="254.285718616174,99.4117661000948" />
+          TopLeft="300.00000510897,83.3529423454641" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="171.257143416697,119.829413153556">
+          TopLeft="206.257144012743,104.917648238542">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="83.0285751994776,0"
+              EndConnector="93.7428610962265,0"
               Start="0,0"
-              End="75.5285751994776,0">
+              End="86.2428610962265,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="75.5285751994776,0" />
+                    End="86.2428610962265,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -580,21 +580,21 @@
         <NodeLayout
           Size="148,41.6"
           Id="Package\Data Flow Task\Dim_Customer"
-          TopLeft="470.000008004053,103.235295565483" />
+          TopLeft="495.71429415625,82.5882364523865" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="351.885718616174,122.123530832789">
+          TopLeft="397.60000510897,103.770589398925">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="118.114289387878,0"
+              EndConnector="98.1142890472802,0"
               Start="0,0"
-              End="110.614289387878,0">
+              End="90.6142890472802,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="110.614289387878,0" />
+                    End="90.6142890472802,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
