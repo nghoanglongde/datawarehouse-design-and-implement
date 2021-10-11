@@ -11,11 +11,23 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{8ABEC19B-DFFA-4881-9E0C-34DAF0B8F2D8}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{8EFA1610-4A39-4C52-829A-274B4C371602}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[C:\Users\tn111\OneDrive\Desktop\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9AADD215-A328-4DF1-A992-E2B9E9E67E30}"
+      DTS:ObjectName="C:\Users\tn111\OneDrive\Desktop\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=C:\Users\tn111\OneDrive\Desktop\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb;Provider=Microsoft.ACE.OLEDB.12.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[D:\GitHub-Work-Space\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
       DTS:CreationName="OLEDB"
@@ -38,6 +50,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DESKTOP-RI1DGNT;Initial Catalog=BookStore_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F5453700-9415-4A0D-8202-AFECAF99437B}"
+      DTS:ObjectName="HNGUYEN.BookStore_DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HNGUYEN;Initial Catalog=BookStore_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -116,8 +140,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Dim_Book.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.BookStore_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.BookStore_DW]"
+                  connectionManagerID="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -263,8 +287,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[D:\GitHub-Work-Space\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
-                  connectionManagerRefId="Package.ConnectionManagers[D:\GitHub-Work-Space\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
+                  connectionManagerID="Package.ConnectionManagers[C:\Users\tn111\OneDrive\Desktop\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
+                  connectionManagerRefId="Package.ConnectionManagers[C:\Users\tn111\OneDrive\Desktop\Data-Warehouse-and-OLAP\dataset\BookStore_data\bookstore.mdb]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -620,28 +644,6 @@
           Size="97.6,41.6"
           Id="Package\Data Flow Task\Sort"
           TopLeft="287.857147759321,104.764707351638" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="196.028572219245,126.329413244716">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91.8285755400756,0"
-              Start="0,0"
-              End="84.3285755400756,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="84.3285755400756,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\Data Flow Task\Dim_Book"
@@ -660,6 +662,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="97.0428605853294,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="196.028572219245,126.329413244716">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91.8285755400756,0"
+              Start="0,0"
+              End="84.3285755400756,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.3285755400756,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -37,3 +37,13 @@ FROM dbo.Dim_Book;
 
 SELECT *
 FROM dbo.Dim_Time;
+
+-- SET FOREIGN KEY
+ALTER TABLE dbo.Fact_BookStore
+ADD CONSTRAINT FK_DIM_CUS FOREIGN KEY(customer_numb) REFERENCES dbo.Dim_Customer(customer_numb);
+
+ALTER TABLE dbo.Fact_BookStore
+ADD CONSTRAINT FK_DIM_BOOK FOREIGN KEY(isbn) REFERENCES dbo.Dim_Book(isbn);
+
+ALTER TABLE dbo.Fact_BookStore
+ADD CONSTRAINT FK_DIM_TIME FOREIGN KEY(order_date) REFERENCES dbo.Dim_Time(order_date);
