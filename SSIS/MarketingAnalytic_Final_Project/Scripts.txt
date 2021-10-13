@@ -1,0 +1,72 @@
+-- CLEAN DATA LAKE
+if exists (select name from sys.Tables where name = 'Original_Data')
+	begin
+		DELETE FROM Original_Data;
+	end
+go
+
+if exists (select name from sys.Tables where name = 'Clean_Data')
+	begin
+		DELETE FROM Clean_Data;
+	end
+go
+
+if exists (select name from sys.Tables where name = 'Null_Data')
+	begin
+		DELETE FROM Null_Data;
+	end
+go
+
+-- CHANGE DATA TYPE ORIGINAL_DATA TABLE
+[User_ID] int,
+[Year_Birth] int,
+[Education] varchar(50),
+[Marital_Status] varchar(50),
+[Income] float,
+[Kidhome] int,
+[Teenhome] int,
+[Date_Enroll] date,
+[Recency] int,
+[MntWines] float,
+[MntFruits] float,
+[MntMeats] float,
+[MntFishs] float,
+[MntSweets] float,
+[MntGolds] float,
+[NumDealsPurchases] int,
+[NumWebPurchases] int,
+[NumCatalogPurchases] int,
+[NumStorePurchases] int,
+[NumWebVisitsMonth] int,
+[AcceptedCmp3] int,
+[AcceptedCmp4] int,
+[AcceptedCmp5] int,
+[AcceptedCmp1] int,
+[AcceptedCmp2] int,
+[Response] int,
+[Complain] int,
+[Country] varchar(50)
+
+-- CONDITIONAL SPLIT NULL
+ISNULL( [User_ID]  ) || ISNULL( [Year_Birth] ) || ISNULL( [Education] ) || ISNULL( [Marital_Status] ) || ISNULL( [Income] ) || ISNULL( [Kidhome] ) || ISNULL( [Teenhome] ) || ISNULL( [Date_Enroll] ) || ISNULL( [Recency] ) || ISNULL( [MntWines] ) || ISNULL( [MntFruits] ) || ISNULL( [MntMeats] ) || ISNULL( [MntFishs] ) || ISNULL( [MntSweets] ) || ISNULL( [MntGolds] ) || ISNULL( [NumDealsPurchases] ) || ISNULL( [NumWebPurchases] ) || ISNULL( [NumCatalogPurchases] ) || ISNULL( [NumStorePurchases] ) || ISNULL( [NumWebVisitsMonth] ) || ISNULL( [AcceptedCmp3] ) || ISNULL( [AcceptedCmp4] ) || ISNULL( [AcceptedCmp5] ) || ISNULL( [AcceptedCmp1] ) || ISNULL( [AcceptedCmp2] ) || ISNULL( [Response] ) || ISNULL( [Complain] ) || ISNULL( [Country])
+
+-- DERIVED COLUMN FACT_TABLE
+Total_Campaigns_Accepted | AcceptedCmp3 + AcceptedCmp4 + AcceptedCmp5 + AcceptedCmp1 + AcceptedCmp2
+Total_Spent | MntWines + MntFruits + MntMeats + MntFishs + MntSweets + MntGolds
+
+-- SET FOREIGN KEYS
+if not exists (select name from sys.foreign_keys where name = 'FK_FACT_CUS')
+	begin
+		ALTER TABLE Fact_MarketingAnalytic
+		ADD CONSTRAINT FK_FACT_CUS
+		FOREIGN KEY(User_ID) REFERENCES Dim_Customer(User_ID);
+	end
+GO
+
+if not exists (select name from sys.foreign_keys where name = 'FK_FACT_DATE')
+	begin
+		ALTER TABLE Fact_MarketingAnalytic
+		ADD CONSTRAINT FK_FACT_DATE
+		FOREIGN KEY(Date_ID) REFERENCES Dim_Date(Date_ID);
+	end
+GO
