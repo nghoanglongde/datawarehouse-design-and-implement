@@ -2,23 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_BookStore</Name>
-    <LastWriteTime>2021-10-11T04:39:55.8395175Z</LastWriteTime>
+    <LastWriteTime>2021-10-11T14:47:42.5711256Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Fact_BookStore.dtsx</Name>
-      <LastWriteTime>2021-10-11T04:33:08.7445702Z</LastWriteTime>
+      <LastWriteTime>2021-10-11T14:43:46.29498Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Dim_Customer.dtsx</Name>
-      <LastWriteTime>2021-10-11T04:37:07.7864782Z</LastWriteTime>
+      <LastWriteTime>2021-10-11T14:46:18.892212Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Dim_Book.dtsx</Name>
-      <LastWriteTime>2021-10-11T04:39:55.8082365Z</LastWriteTime>
+      <LastWriteTime>2021-10-11T14:47:42.5521738Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
