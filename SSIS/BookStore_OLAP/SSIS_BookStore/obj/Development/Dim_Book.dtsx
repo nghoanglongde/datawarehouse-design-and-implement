@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{8EFA1610-4A39-4C52-829A-274B4C371602}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{8C6A516C-28FA-43B6-BD38-9C8CA9205B73}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -50,6 +50,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DESKTOP-RI1DGNT;Initial Catalog=BookStore_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HNGUYEN.BookStore]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{25C0D412-8C96-48F8-B077-4CC606848748}"
+      DTS:ObjectName="HNGUYEN.BookStore">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HNGUYEN;Initial Catalog=BookStore;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -140,8 +152,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Dim_Book.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
+                  connectionManagerID="Package.ConnectionManagers[HNGUYEN.BookStore]"
+                  connectionManagerRefId="Package.ConnectionManagers[HNGUYEN.BookStore]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -647,21 +659,21 @@
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\Data Flow Task\Dim_Book"
-          TopLeft="490.00000834465,108.588236817027" />
+          TopLeft="492.142865524,108.588236817027" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
           TopLeft="385.457147759321,127.476472084332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="104.542860585329,0"
+              EndConnector="106.685717764679,0"
               Start="0,0"
-              End="97.0428605853294,0">
+              End="99.1857177646787,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="97.0428605853294,0" />
+                    End="99.1857177646787,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

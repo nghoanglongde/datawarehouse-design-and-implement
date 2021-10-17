@@ -1,5 +1,5 @@
-create database BookStore_DW;
-use BookStore_DW;
+create database BookStore;
+use BookStore;
 
 -- CREATE DIM_TIME
 

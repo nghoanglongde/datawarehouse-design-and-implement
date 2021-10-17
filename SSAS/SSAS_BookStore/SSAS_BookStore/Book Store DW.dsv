@@ -1,0 +1,167 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d905c0d2-b08f-4def-b2fc-561f9629e4ab" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Book Store DW</ID>
+  <Name>Book Store DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Book Store DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Book_x0020_Store_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Book_x0020_Store_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d2d1aee3-788a-4b8e-bea9-5b954cb2fe2b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_BookStore" msprop:design-time-name="a207ab4e-3ce3-4b8e-8cb9-deea6584921b" msprop:DbTableName="Fact_BookStore" msprop:FriendlyName="Fact_BookStore" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="631c5284-ced9-446c-90a5-bf415a8e3b78" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="order_numb" msprop:design-time-name="60f8cfb9-8bb0-437b-bff6-18702c55ce2f" msprop:DbColumnName="order_numb" msprop:FriendlyName="order_numb" type="xs:int" minOccurs="0" />
+                  <xs:element name="isbn" msprop:design-time-name="a8bc19d0-7597-4898-adde-31c90aa4dc9c" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="quantity" msprop:design-time-name="b71a2fbe-46d7-437c-a77a-df8c5bf44863" msprop:DbColumnName="quantity" msprop:FriendlyName="quantity" type="xs:int" minOccurs="0" />
+                  <xs:element name="cost_each" msprop:design-time-name="a434710e-5bb9-442e-b3cb-ddf8445c989d" msprop:DbColumnName="cost_each" msprop:FriendlyName="cost_each" type="xs:double" minOccurs="0" />
+                  <xs:element name="cost_line" msprop:design-time-name="fd833614-646c-41fc-817e-eaf89754e82b" msprop:DbColumnName="cost_line" msprop:FriendlyName="cost_line" type="xs:double" minOccurs="0" />
+                  <xs:element name="customer_numb" msprop:design-time-name="79fa2078-6698-4efb-af96-07fe5deff40e" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" minOccurs="0" />
+                  <xs:element name="order_date" msprop:design-time-name="7784049c-1f5b-4dee-a9dd-b8247be73a21" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Time" msprop:design-time-name="e3e9a01a-5110-48c1-b8b3-d5e7c1e7aa0e" msprop:DbTableName="Dim_Time" msprop:FriendlyName="Dim_Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="order_date" msprop:design-time-name="2ebc2cf5-b066-4b14-b896-55a81adbdbe2" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" />
+                  <xs:element name="mothG" msprop:design-time-name="34cf939c-9105-4499-bb3d-0c9e5ab850c2" msprop:DbColumnName="mothG" msprop:FriendlyName="mothG" type="xs:int" minOccurs="0" />
+                  <xs:element name="quaterG" msprop:design-time-name="b5382a05-fddb-4995-84c3-6d84eb3c207a" msprop:DbColumnName="quaterG" msprop:FriendlyName="quaterG" type="xs:int" minOccurs="0" />
+                  <xs:element name="yearG" msprop:design-time-name="a5f3064e-9792-4820-9c9e-c02f10d750b4" msprop:DbColumnName="yearG" msprop:FriendlyName="yearG" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Customer" msprop:design-time-name="2521b8e7-889c-4174-9df3-b384b5940ceb" msprop:DbTableName="Dim_Customer" msprop:FriendlyName="Dim_Customer" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="customer_numb" msprop:design-time-name="0d4fc18b-ef32-45a6-aeb3-8e9e296b1234" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" />
+                  <xs:element name="customer_first_name" msprop:design-time-name="fa78fb0d-1442-4ceb-8029-3306b54d5efc" msprop:DbColumnName="customer_first_name" msprop:FriendlyName="customer_first_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="customer_last_name" msprop:design-time-name="f581a473-a2c8-40c5-a532-f2cbaa274bdb" msprop:DbColumnName="customer_last_name" msprop:FriendlyName="customer_last_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Book" msprop:design-time-name="3b7751c7-b91d-47fb-a8e2-56561967140c" msprop:DbTableName="Dim_Book" msprop:FriendlyName="Dim_Book" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="isbn" msprop:design-time-name="cf2d3722-7a4c-4eac-b05d-12cd9b482188" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="author_name" msprop:design-time-name="5b1a93a1-999d-4a50-8410-fede08f95288" msprop:DbColumnName="author_name" msprop:FriendlyName="author_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="title" msprop:design-time-name="0722060f-1e0f-410f-835a-96e08106de0e" msprop:DbColumnName="title" msprop:FriendlyName="title" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="publisher_name" msprop:design-time-name="957a07b0-2177-4fc5-a893-4f1aac350326" msprop:DbColumnName="publisher_name" msprop:FriendlyName="publisher_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_BookStore" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Time" />
+          <xs:field xpath="order_date" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Customer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Customer" />
+          <xs:field xpath="customer_numb" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Book_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Book" />
+          <xs:field xpath="isbn" />
+        </xs:unique>
+        <xs:keyref name="FK_DIM_CUS" refer="dbo_Dim_Customer_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_BookStore" />
+          <xs:field xpath="customer_numb" />
+        </xs:keyref>
+        <xs:keyref name="FK_DIM_BOOK" refer="dbo_Dim_Book_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_BookStore" />
+          <xs:field xpath="isbn" />
+        </xs:keyref>
+        <xs:keyref name="FK_DIM_TIME" refer="dbo_Dim_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_BookStore" />
+          <xs:field xpath="order_date" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Book_x0020_Store_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

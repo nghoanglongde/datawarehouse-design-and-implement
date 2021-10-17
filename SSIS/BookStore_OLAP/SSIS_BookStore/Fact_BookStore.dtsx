@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{46F9C5D9-3F84-4778-B944-C32D07A54109}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{269F6735-C342-489B-A4A7-C02927401674}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -62,6 +62,30 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=DESKTOP-RI1DGNT;Initial Catalog=BookStore_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HNGUYEN]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1A6E43F3-6D3C-4DAC-93C2-CD85E3C41FFB}"
+      DTS:ObjectName="HNGUYEN">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HNGUYEN;Provider=Microsoft.ACE.OLEDB.12.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HNGUYEN.BookStore]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{22D647AE-1FF0-4817-B67B-04E209461DA0}"
+      DTS:ObjectName="HNGUYEN.BookStore">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HNGUYEN;Initial Catalog=BookStore;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -152,8 +176,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Fact_BookStore.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[HNGUYEN.BookStore_DW]"
+                  connectionManagerID="Package.ConnectionManagers[HNGUYEN.BookStore]"
+                  connectionManagerRefId="Package.ConnectionManagers[HNGUYEN.BookStore]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
