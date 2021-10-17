@@ -2,8 +2,8 @@
   <Database>
     <DataSources>
       <DataSource>
-        <ID>Book Store DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=HNGUYEN;Integrated Security=SSPI;Initial Catalog=BookStore_DW</ConnectionString>
+        <ID>Book Store</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=HNGUYEN;Integrated Security=SSPI;Initial Catalog=BookStore</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
@@ -23,7 +23,7 @@
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Book Store DW</ID>
+        <ID>Book Store</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Fact Book Store</ID>

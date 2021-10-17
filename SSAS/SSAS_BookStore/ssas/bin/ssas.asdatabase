@@ -1,6 +1,6 @@
 ﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>BookStore_DW</ID>
-  <Name>BookStore_DW</Name>
+  <ID>ssas</ID>
+  <Name>ssas</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -21,7 +21,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4258" scrolltop="-7112" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11557" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3147" scrolltop="-4795" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9335" y="11896" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                 </font>
@@ -60,11 +60,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-4258</Value>
+          <Value>-3147</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7112</Value>
+          <Value>-4795</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -89,9 +89,9 @@
                   </Attributes>
                   <Position x="20" y="20" />
                 </Shape>
-                <Shape Id="Moth G" Expanded="false">
+                <Shape Id="Year G" Expanded="true">
                   <Attributes>
-                    <Attribute Id="Moth G" />
+                    <Attribute Id="Year G" />
                   </Attributes>
                   <Position x="160" y="20" />
                 </Shape>
@@ -99,13 +99,13 @@
                   <Attributes>
                     <Attribute Id="Quater G" />
                   </Attributes>
-                  <Position x="300" y="20" />
+                  <Position x="160" y="69" />
                 </Shape>
-                <Shape Id="Year G" Expanded="false">
+                <Shape Id="Moth G" Expanded="true">
                   <Attributes>
-                    <Attribute Id="Year G" />
+                    <Attribute Id="Moth G" />
                   </Attributes>
-                  <Position x="440" y="20" />
+                  <Position x="160" y="118" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -115,9 +115,9 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Book Store DW</DataSourceViewID>
+        <DataSourceViewID>Book Store</DataSourceViewID>
       </Source>
-      <UnknownMember>Visible</UnknownMember>
+      <UnknownMember>Hidden</UnknownMember>
       <ErrorConfiguration>
         <KeyNotFound>ReportAndStop</KeyNotFound>
         <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -144,6 +144,14 @@
               <AttributeID>Moth G</AttributeID>
               <Name>Moth G</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Quater G</AttributeID>
+              <Name>Quater G</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Year G</AttributeID>
+              <Name>Year G</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -161,12 +169,13 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Quater G</AttributeID>
-              <Name>Quater G</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_Dim_Time</TableID>
+              <ColumnID>mothG</ColumnID>
+            </Source>
+          </NameColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -182,12 +191,6 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Year G</AttributeID>
-              <Name>Year G</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -242,7 +245,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4150" scrolltop="-7112" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11557" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3039" scrolltop="-4795" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9335" y="11896" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                 </font>
@@ -281,11 +284,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-4150</Value>
+          <Value>-3039</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7112</Value>
+          <Value>-4795</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -303,7 +306,7 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Book Store DW</DataSourceViewID>
+        <DataSourceViewID>Book Store</DataSourceViewID>
       </Source>
       <UnknownMember>Visible</UnknownMember>
       <ErrorConfiguration>
@@ -328,7 +331,69 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Author Name</AttributeID>
+              <Name>Author Name</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Title</AttributeID>
+              <Name>Title</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Publisher Name</AttributeID>
+              <Name>Publisher Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Author Name</ID>
+          <Name>Author Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Dim_Book</TableID>
+                <ColumnID>author_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Title</ID>
+          <Name>Title</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Dim_Book</TableID>
+                <ColumnID>title</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Publisher Name</ID>
+          <Name>Publisher Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Dim_Book</TableID>
+                <ColumnID>publisher_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -345,7 +410,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3821" scrolltop="-7292" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11557" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2710" scrolltop="-4975" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9335" y="11896" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                 </font>
@@ -384,11 +449,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3821</Value>
+          <Value>-2710</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7292</Value>
+          <Value>-4975</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -406,7 +471,7 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Book Store DW</DataSourceViewID>
+        <DataSourceViewID>Book Store</DataSourceViewID>
       </Source>
       <UnknownMember>Visible</UnknownMember>
       <ErrorConfiguration>
@@ -430,7 +495,49 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Customer First Name</AttributeID>
+              <Name>Customer First Name</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Customer Last Name</AttributeID>
+              <Name>Customer Last Name</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Customer First Name</ID>
+          <Name>Customer First Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Dim_Customer</TableID>
+                <ColumnID>customer_first_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Customer Last Name</ID>
+          <Name>Customer Last Name</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Dim_Customer</TableID>
+                <ColumnID>customer_last_name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -440,8 +547,8 @@
   </Dimensions>
   <Cubes>
     <Cube>
-      <ID>Book Store DW</ID>
-      <Name>Book Store DW</Name>
+      <ID>Book Store</ID>
+      <Name>Book Store</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -449,7 +556,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8991" scrolltop="-1643" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32830" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12158" scrolltop="-2205" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="25421" y="11896" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                 </font>
@@ -460,7 +567,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_BookStore" left="348" top="4707" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3217" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_BookStore" left="348" top="4707" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="3217" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000910c0000a30e0000" />
                 </control>
@@ -471,7 +578,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Book" left="348" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3217" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Book" left="348" top="0" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="3217" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000910c000003090000" />
                 </control>
@@ -482,7 +589,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="5965" top="5427" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="5965" top="5427" logicalid="10" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
                 </control>
@@ -493,7 +600,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Customer" left="20" top="10854" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3874" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Customer" left="20" top="10854" logicalid="11" controlid="4" masterid="0" hint1="0" hint2="0" width="3874" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000220f00009b070000" />
                 </control>
@@ -504,7 +611,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="3265" top="6181" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3265" top="6181" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -522,7 +629,7 @@
                   <point x="3565" y="6580" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="1557" top="1808" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1557" top="1808" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -540,7 +647,7 @@
                   <point x="1956" y="4707" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="1558" top="8154" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1558" top="8154" logicalid="14" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -577,11 +684,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-8991</Value>
+          <Value>-12158</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-1643</Value>
+          <Value>-2205</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -593,7 +700,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
+          <Value>75</Value>
         </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -631,6 +738,15 @@
             <Attribute>
               <AttributeID>Isbn</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Author Name</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Title</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Publisher Name</AttributeID>
+            </Attribute>
           </Attributes>
         </Dimension>
         <Dimension>
@@ -640,6 +756,12 @@
           <Attributes>
             <Attribute>
               <AttributeID>Customer Numb</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Customer First Name</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Customer Last Name</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -781,7 +903,7 @@
               <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
-                <DataSourceViewID>Book Store DW</DataSourceViewID>
+                <DataSourceViewID>Book Store</DataSourceViewID>
                 <TableID>dbo_Fact_BookStore</TableID>
               </Source>
               <StorageMode>Molap</StorageMode>
@@ -792,17 +914,17 @@
         </MeasureGroup>
       </MeasureGroups>
       <Source>
-        <DataSourceViewID>Book Store DW</DataSourceViewID>
+        <DataSourceViewID>Book Store</DataSourceViewID>
       </Source>
     </Cube>
   </Cubes>
   <DataSources>
     <DataSource xsi:type="RelationalDataSource">
-      <ID>Book Store DW</ID>
-      <Name>Book Store DW</Name>
+      <ID>Book Store</ID>
+      <Name>Book Store</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <ConnectionString>Provider=SQLNCLI11.1;Data Source=HNGUYEN;Integrated Security=SSPI;Initial Catalog=BookStore_DW</ConnectionString>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=HNGUYEN;Integrated Security=SSPI;Initial Catalog=BookStore</ConnectionString>
       <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
       <ImpersonationInfo>
         <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
@@ -813,8 +935,8 @@
   </DataSources>
   <DataSourceViews>
     <DataSourceView>
-      <ID>Book Store DW</ID>
-      <Name>Book Store DW</Name>
+      <ID>Book Store</ID>
+      <Name>Book Store</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -853,54 +975,54 @@
           </Value>
         </Annotation>
       </Annotations>
-      <DataSourceID>Book Store DW</DataSourceID>
+      <DataSourceID>Book Store</DataSourceID>
       <Schema>
-        <xs:schema id="Book_x0020_Store_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-          <xs:element name="Book_x0020_Store_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d2d1aee3-788a-4b8e-bea9-5b954cb2fe2b">
+        <xs:schema id="Book_x0020_Store" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="Book_x0020_Store" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6bcefc1d-19c3-430e-bc98-878156954032">
             <xs:complexType>
               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="dbo_Fact_BookStore" msprop:design-time-name="a207ab4e-3ce3-4b8e-8cb9-deea6584921b" msprop:FriendlyName="Fact_BookStore" msprop:DbSchemaName="dbo" msprop:DbTableName="Fact_BookStore" msprop:TableType="Table">
+                <xs:element name="dbo_Fact_BookStore" msprop:design-time-name="7f5d10fd-dbba-4026-ab8a-8bb594c75a8a" msprop:FriendlyName="Fact_BookStore" msprop:DbSchemaName="dbo" msprop:DbTableName="Fact_BookStore" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="631c5284-ced9-446c-90a5-bf415a8e3b78" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
-                      <xs:element name="order_numb" msprop:design-time-name="60f8cfb9-8bb0-437b-bff6-18702c55ce2f" msprop:DbColumnName="order_numb" msprop:FriendlyName="order_numb" type="xs:int" minOccurs="0" />
-                      <xs:element name="isbn" msprop:design-time-name="a8bc19d0-7597-4898-adde-31c90aa4dc9c" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn" minOccurs="0">
+                      <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1c9bcd5a-a7db-46eb-8a9a-47f1ab9fb7c4" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                      <xs:element name="order_numb" msprop:design-time-name="db08001c-36d0-486c-9ad0-bdec4b6bd121" msprop:DbColumnName="order_numb" msprop:FriendlyName="order_numb" type="xs:int" minOccurs="0" />
+                      <xs:element name="isbn" msprop:design-time-name="395f730d-2a38-4372-8eca-8b0ce3b8801c" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="quantity" msprop:design-time-name="b71a2fbe-46d7-437c-a77a-df8c5bf44863" msprop:DbColumnName="quantity" msprop:FriendlyName="quantity" type="xs:int" minOccurs="0" />
-                      <xs:element name="cost_each" msprop:design-time-name="a434710e-5bb9-442e-b3cb-ddf8445c989d" msprop:DbColumnName="cost_each" msprop:FriendlyName="cost_each" type="xs:double" minOccurs="0" />
-                      <xs:element name="cost_line" msprop:design-time-name="fd833614-646c-41fc-817e-eaf89754e82b" msprop:DbColumnName="cost_line" msprop:FriendlyName="cost_line" type="xs:double" minOccurs="0" />
-                      <xs:element name="customer_numb" msprop:design-time-name="79fa2078-6698-4efb-af96-07fe5deff40e" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" minOccurs="0" />
-                      <xs:element name="order_date" msprop:design-time-name="7784049c-1f5b-4dee-a9dd-b8247be73a21" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="quantity" msprop:design-time-name="b8f2f96b-d3c6-47c6-9410-9dd644add145" msprop:DbColumnName="quantity" msprop:FriendlyName="quantity" type="xs:int" minOccurs="0" />
+                      <xs:element name="cost_each" msprop:design-time-name="a7cef672-fe7e-4b32-9821-d8409682ceea" msprop:DbColumnName="cost_each" msprop:FriendlyName="cost_each" type="xs:double" minOccurs="0" />
+                      <xs:element name="cost_line" msprop:design-time-name="9cdd0488-4bb2-458f-9325-6c141862e703" msprop:DbColumnName="cost_line" msprop:FriendlyName="cost_line" type="xs:double" minOccurs="0" />
+                      <xs:element name="customer_numb" msprop:design-time-name="2fd53cc5-e228-4481-9e89-4859cae0855a" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" minOccurs="0" />
+                      <xs:element name="order_date" msprop:design-time-name="b7d81f22-554b-4130-b527-a5768dbeb4a9" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Dim_Time" msprop:design-time-name="e3e9a01a-5110-48c1-b8b3-d5e7c1e7aa0e" msprop:FriendlyName="Dim_Time" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Time" msprop:TableType="Table">
+                <xs:element name="dbo_Dim_Time" msprop:design-time-name="eee185d2-6498-48ef-93fb-62735608def1" msprop:FriendlyName="Dim_Time" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Time" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="order_date" msprop:design-time-name="2ebc2cf5-b066-4b14-b896-55a81adbdbe2" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" />
-                      <xs:element name="mothG" msprop:design-time-name="34cf939c-9105-4499-bb3d-0c9e5ab850c2" msprop:DbColumnName="mothG" msprop:FriendlyName="mothG" type="xs:int" minOccurs="0" />
-                      <xs:element name="quaterG" msprop:design-time-name="b5382a05-fddb-4995-84c3-6d84eb3c207a" msprop:DbColumnName="quaterG" msprop:FriendlyName="quaterG" type="xs:int" minOccurs="0" />
-                      <xs:element name="yearG" msprop:design-time-name="a5f3064e-9792-4820-9c9e-c02f10d750b4" msprop:DbColumnName="yearG" msprop:FriendlyName="yearG" type="xs:int" minOccurs="0" />
+                      <xs:element name="order_date" msprop:design-time-name="0bec6079-63d4-4112-91d9-afe3b6a87d6d" msprop:DbColumnName="order_date" msprop:FriendlyName="order_date" type="xs:dateTime" />
+                      <xs:element name="mothG" msprop:design-time-name="dbb36eff-1eb2-4995-b1a6-66c1e3c92db0" msprop:DbColumnName="mothG" msprop:FriendlyName="mothG" type="xs:int" minOccurs="0" />
+                      <xs:element name="quaterG" msprop:design-time-name="bfab4d32-4c23-4349-9c79-0b9a04963154" msprop:DbColumnName="quaterG" msprop:FriendlyName="quaterG" type="xs:int" minOccurs="0" />
+                      <xs:element name="yearG" msprop:design-time-name="e9da11bd-12aa-4c99-91cf-81f423c296e4" msprop:DbColumnName="yearG" msprop:FriendlyName="yearG" type="xs:int" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Dim_Customer" msprop:design-time-name="2521b8e7-889c-4174-9df3-b384b5940ceb" msprop:FriendlyName="Dim_Customer" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Customer" msprop:TableType="Table">
+                <xs:element name="dbo_Dim_Customer" msprop:design-time-name="b0eba020-70b5-4424-ba5c-b8869a493880" msprop:FriendlyName="Dim_Customer" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Customer" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="customer_numb" msprop:design-time-name="0d4fc18b-ef32-45a6-aeb3-8e9e296b1234" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" />
-                      <xs:element name="customer_first_name" msprop:design-time-name="fa78fb0d-1442-4ceb-8029-3306b54d5efc" msprop:DbColumnName="customer_first_name" msprop:FriendlyName="customer_first_name" minOccurs="0">
+                      <xs:element name="customer_numb" msprop:design-time-name="f4d4a51b-e8ab-4884-89b6-4efa564ba4ea" msprop:DbColumnName="customer_numb" msprop:FriendlyName="customer_numb" type="xs:int" />
+                      <xs:element name="customer_first_name" msprop:design-time-name="43280447-615a-435e-a81a-910f757ab273" msprop:DbColumnName="customer_first_name" msprop:FriendlyName="customer_first_name" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="customer_last_name" msprop:design-time-name="f581a473-a2c8-40c5-a532-f2cbaa274bdb" msprop:DbColumnName="customer_last_name" msprop:FriendlyName="customer_last_name" minOccurs="0">
+                      <xs:element name="customer_last_name" msprop:design-time-name="ec58e5de-adca-4a71-877f-48b31f53a0b4" msprop:DbColumnName="customer_last_name" msprop:FriendlyName="customer_last_name" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
@@ -910,31 +1032,31 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Dim_Book" msprop:design-time-name="3b7751c7-b91d-47fb-a8e2-56561967140c" msprop:FriendlyName="Dim_Book" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Book" msprop:TableType="Table">
+                <xs:element name="dbo_Dim_Book" msprop:design-time-name="a3b304e8-d7d9-489f-b655-1d19823a136e" msprop:FriendlyName="Dim_Book" msprop:DbSchemaName="dbo" msprop:DbTableName="Dim_Book" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="isbn" msprop:design-time-name="cf2d3722-7a4c-4eac-b05d-12cd9b482188" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn">
+                      <xs:element name="isbn" msprop:design-time-name="c3071582-7934-4b69-b280-e991f11f1155" msprop:DbColumnName="isbn" msprop:FriendlyName="isbn">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="author_name" msprop:design-time-name="5b1a93a1-999d-4a50-8410-fede08f95288" msprop:DbColumnName="author_name" msprop:FriendlyName="author_name" minOccurs="0">
+                      <xs:element name="author_name" msprop:design-time-name="4d4c337e-cd2e-4ae4-8b19-c83f03876f64" msprop:DbColumnName="author_name" msprop:FriendlyName="author_name" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="title" msprop:design-time-name="0722060f-1e0f-410f-835a-96e08106de0e" msprop:DbColumnName="title" msprop:FriendlyName="title" minOccurs="0">
+                      <xs:element name="title" msprop:design-time-name="930f4283-cf7a-492f-8704-51143211cec2" msprop:DbColumnName="title" msprop:FriendlyName="title" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="publisher_name" msprop:design-time-name="957a07b0-2177-4fc5-a893-4f1aac350326" msprop:DbColumnName="publisher_name" msprop:FriendlyName="publisher_name" minOccurs="0">
+                      <xs:element name="publisher_name" msprop:design-time-name="837c8187-a808-4dfa-a56d-a4c5a09f0f5a" msprop:DbColumnName="publisher_name" msprop:FriendlyName="publisher_name" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
@@ -976,7 +1098,7 @@
             </xs:keyref>
           </xs:element>
         </xs:schema>
-        <Book_x0020_Store_x0020_DW xmlns="" />
+        <Book_x0020_Store xmlns="" />
       </Schema>
     </DataSourceView>
   </DataSourceViews>

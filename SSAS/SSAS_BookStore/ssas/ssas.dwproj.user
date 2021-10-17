@@ -3,8 +3,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>HNGUYEN</TargetServer>
-        <TargetDatabase>BookStore_DW</TargetDatabase>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>ssas</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
