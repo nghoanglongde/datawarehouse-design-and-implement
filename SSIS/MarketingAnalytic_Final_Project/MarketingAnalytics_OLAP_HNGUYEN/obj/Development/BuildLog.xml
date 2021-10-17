@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>MarketingAnalytics_OLAP</Name>
-    <LastWriteTime>2021-10-15T00:03:45.8720454Z</LastWriteTime>
+    <LastWriteTime>2021-10-17T09:29:38.0614596Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>MarketingAnalytics_SSIS.dtsx</Name>
-      <LastWriteTime>2021-10-15T00:03:45.8498984Z</LastWriteTime>
+      <LastWriteTime>2021-10-17T09:29:38.0435397Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
