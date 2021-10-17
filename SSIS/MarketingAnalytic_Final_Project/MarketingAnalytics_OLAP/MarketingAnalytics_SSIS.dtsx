@@ -11,27 +11,27 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{AA515750-33BF-4BC7-B4BD-D81768421CD5}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{098541F1-EDC7-46D2-9A53-E79D997CC28A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+      DTS:refId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F7CE41D5-2485-42F1-924C-6DA0B42EAC65}"
-      DTS:ObjectName="DESKTOP-RI1DGNT.Datalake_MarketingAnalytics">
+      DTS:DTSID="{F8768A2B-5AA2-4E67-9678-BDC12215B537}"
+      DTS:ObjectName="DESKTOP-RI1DGNT.DataLake_MarketingAnalytics">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-RI1DGNT;Initial Catalog=Datalake_MarketingAnalytics;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-RI1DGNT;Initial Catalog=DataLake_MarketingAnalytics;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataWarehouse_MarketingAnalytics]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{5A81703C-C292-4D12-A177-3D600236F1AD}"
+      DTS:DTSID="{07F7C1B5-E928-492B-BA94-62A31409FE06}"
       DTS:ObjectName="DESKTOP-RI1DGNT.DataWarehouse_MarketingAnalytics">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -43,7 +43,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{8BC68DF9-BF8B-4E39-A371-AECD3B08397B}"
+      DTS:DTSID="{AC9B01EC-75B0-49A8-9B85-4CD73D383ED4}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -62,7 +62,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="User_ID"
-              DTS:DTSID="{5BCA6D4B-AE98-43AD-8D3F-9716B0A05F32}"
+              DTS:DTSID="{FD3CDA89-FC66-4E1D-865A-97A9456D5833}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -70,7 +70,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Year_Birth"
-              DTS:DTSID="{AF95EFC6-70B2-4C31-A8B2-7F2C90214CC4}"
+              DTS:DTSID="{AF337D47-4ED1-4191-8F6B-1A951822860A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -79,7 +79,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Education"
-              DTS:DTSID="{7791BDCA-F5B5-4152-8D36-A421F80370D6}"
+              DTS:DTSID="{8046D5E4-00CD-457F-A307-CB16C79D29FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +88,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Marital_Status"
-              DTS:DTSID="{1EDE8B80-E56B-4B76-88BE-4691A6D67043}"
+              DTS:DTSID="{86C36032-E784-47E2-9ED1-A6C9F1A39344}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Income"
-              DTS:DTSID="{7ED7B2A1-5DEA-4AB6-ACB7-A40480D7E5C9}"
+              DTS:DTSID="{E36F0B86-34CC-4A2E-B6DE-47542D185ADB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Kidhome"
-              DTS:DTSID="{EC4EBA5A-A783-465C-AF20-679F05E9F462}"
+              DTS:DTSID="{28CB14B9-1533-49ED-B20A-C846517D3A1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Teenhome"
-              DTS:DTSID="{B1116B81-0DE8-46AB-9D26-303DD8D43FB7}"
+              DTS:DTSID="{6D771FFD-E8C5-42E3-A29C-4032A1429C2E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="Date_Enroll"
-              DTS:DTSID="{3480646F-ACA8-4E3B-B8EB-F3DEC3026BC1}"
+              DTS:DTSID="{15193B49-31D7-445D-A3CA-0559C18761AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +128,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Recency"
-              DTS:DTSID="{C525D759-53F7-4B7A-BB82-ADA00A9CD5A8}"
+              DTS:DTSID="{388F49B5-D1CF-45C8-90BC-96622BF85EE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +136,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntWines"
-              DTS:DTSID="{7E56AEF8-D633-4B59-9F98-8FC2230BB938}"
+              DTS:DTSID="{927D5733-2120-4E7D-8793-26D9718175C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +144,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntFruits"
-              DTS:DTSID="{17CE11AA-3BD4-4B1E-A1FF-D433F8551847}"
+              DTS:DTSID="{B09BBE87-62F5-4047-83AC-AED146B4B34E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -152,7 +152,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntMeats"
-              DTS:DTSID="{8FC0D3BF-4E76-4F83-B2AE-860A0221218A}"
+              DTS:DTSID="{C18CB5EA-A31E-42CE-9596-8BC9EC936E45}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -160,7 +160,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntFishs"
-              DTS:DTSID="{BAC3E1D2-E662-463E-8C98-A3A42AD4BFD4}"
+              DTS:DTSID="{B39D2FD4-C18F-4359-8B33-A2CB3373210E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -168,7 +168,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntSweets"
-              DTS:DTSID="{CBE034D2-F175-4AEC-93B5-639244F21A56}"
+              DTS:DTSID="{B78EF023-DFEF-4350-AA57-C61551095EB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="MntGolds"
-              DTS:DTSID="{BFD4C43D-4806-4872-B6C6-69F1DA410E90}"
+              DTS:DTSID="{9FA3A918-0C57-47F2-91E0-A2B749C90B3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +184,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="NumDealsPurchases"
-              DTS:DTSID="{3B1CBC0A-EE3B-4221-9B4E-28998027414F}"
+              DTS:DTSID="{DF0FDED2-33F3-475B-A2CA-86A1D2A09960}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="NumWebPurchases"
-              DTS:DTSID="{B53C9DFF-0A94-4E9E-9CF3-D548C138B406}"
+              DTS:DTSID="{310E851D-A750-43EE-96BC-93F53F1EC5F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="NumCatalogPurchases"
-              DTS:DTSID="{FECB3EA8-06FF-4852-883D-A8A12AF97D61}"
+              DTS:DTSID="{CF25EDA5-C782-4159-B6EC-9C0679B9D530}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -208,7 +208,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="NumStorePurchases"
-              DTS:DTSID="{4782A5A8-7570-40C5-A219-278EA8C19A77}"
+              DTS:DTSID="{822AFCBB-A887-499C-81EC-881F7CF92478}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -216,7 +216,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="NumWebVisitsMonth"
-              DTS:DTSID="{16A034EB-1440-4B10-B36B-27903B096E30}"
+              DTS:DTSID="{FE31A5E6-A032-489F-BBBE-577206A1862E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -224,7 +224,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="AcceptedCmp3"
-              DTS:DTSID="{24F6E309-6ECA-40F0-AE4C-7CA414FA8172}"
+              DTS:DTSID="{277549AB-CFD7-4EC8-B809-7BE3DD2E4387}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -232,7 +232,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="AcceptedCmp4"
-              DTS:DTSID="{A0B1E798-519F-4DD1-BA38-9F13D6E9A215}"
+              DTS:DTSID="{C50F749C-6FD7-4346-9329-1225661E5EE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="AcceptedCmp5"
-              DTS:DTSID="{BB75CAE1-FBF9-4F11-A76E-CCE72DB66E81}"
+              DTS:DTSID="{69172B6B-6437-4843-80E3-21D5081E559C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="AcceptedCmp1"
-              DTS:DTSID="{43DDFF60-F6E3-4292-AE9E-91DFAA11E938}"
+              DTS:DTSID="{CC86B3C9-3AC2-4BBA-9612-949CCAD90804}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -256,7 +256,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="AcceptedCmp2"
-              DTS:DTSID="{F4A3630B-EAD4-4C5C-B545-70803807D35D}"
+              DTS:DTSID="{ABDA85A0-3D8F-446E-A012-28A86CB2DC25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,7 +264,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Response"
-              DTS:DTSID="{B6D3BB05-F4EF-44CF-8CC9-77D08A2791AD}"
+              DTS:DTSID="{138B46B6-19F4-483D-88A6-A856D73C4AEC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -272,7 +272,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Complain"
-              DTS:DTSID="{A5E042EF-1CF8-4FFE-82B8-61C3122E74BD}"
+              DTS:DTSID="{F77B4ABB-EE5C-43BE-820D-03D61389A740}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -281,7 +281,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{C6D496D4-F222-401C-BB70-FBC12F819055}"
+              DTS:DTSID="{6287EB09-A1CD-4A7C-86F1-FBB55DB63541}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -313,7 +313,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F7CE41D5-2485-42F1-924C-6DA0B42EAC65}"
+              SQLTask:Connection="{F8768A2B-5AA2-4E67-9678-BDC12215B537}"
               SQLTask:SqlStatementSource="if exists (select name from sys.Tables where name = 'Original_Data')&#xA;&#x9;begin&#xA;&#x9;&#x9;DELETE FROM Original_Data;&#xA;&#x9;end&#xA;go&#xA;&#xA;if exists (select name from sys.Tables where name = 'Clean_Data')&#xA;&#x9;begin&#xA;&#x9;&#x9;DELETE FROM Clean_Data;&#xA;&#x9;end&#xA;go&#xA;&#xA;if exists (select name from sys.Tables where name = 'Null_Data')&#xA;&#x9;begin&#xA;&#x9;&#x9;DELETE FROM Null_Data;&#xA;&#x9;end&#xA;go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -390,8 +390,8 @@
                   <connections>
                     <connection
                       refId="Package\Clean Data Lake and Load Dataset\Clean_Data\Clean_Data Table.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1043,8 +1043,8 @@
                   <connections>
                     <connection
                       refId="Package\Clean Data Lake and Load Dataset\Clean_Data\Null_Data Table.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1430,8 +1430,8 @@
                   <connections>
                     <connection
                       refId="Package\Clean Data Lake and Load Dataset\Clean_Data\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3756,7 +3756,7 @@
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">3</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3777,8 +3777,8 @@
                   <connections>
                     <connection
                       refId="Package\Clean Data Lake and Load Dataset\Load Data\Original_Data Table.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4472,8 +4472,8 @@
                   <connections>
                     <connection
                       refId="Package\ETL data to Dimension Table\Dim_Customer\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5340,7 +5340,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK</property>
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -5487,8 +5487,8 @@
                   <connections>
                     <connection
                       refId="Package\ETL data to Dimension Table\Dim_Date\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6636,8 +6636,8 @@ where [refTable].[Date_ID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Tạo bảng Fact\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.Datalake_MarketingAnalytics]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-RI1DGNT.DataLake_MarketingAnalytics]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7839,7 +7839,7 @@ where [refTable].[Date_ID] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5A81703C-C292-4D12-A177-3D600236F1AD}"
+          SQLTask:Connection="{07F7C1B5-E928-492B-BA94-62A31409FE06}"
           SQLTask:SqlStatementSource="if not exists (select name from sys.foreign_keys where name = 'FK_FACT_CUS')&#xA;&#x9;begin&#xA;&#x9;&#x9;ALTER TABLE Fact_MarketingAnalytic&#xA;&#x9;&#x9;ADD CONSTRAINT FK_FACT_CUS&#xA;&#x9;&#x9;FOREIGN KEY(User_ID) REFERENCES Dim_Customer(User_ID);&#xA;&#x9;end&#xA;GO&#xA;&#xA;if not exists (select name from sys.foreign_keys where name = 'FK_FACT_DATE')&#xA;&#x9;begin&#xA;&#x9;&#x9;ALTER TABLE Fact_MarketingAnalytic&#xA;&#x9;&#x9;ADD CONSTRAINT FK_FACT_DATE&#xA;&#x9;&#x9;FOREIGN KEY(Date_ID) REFERENCES Dim_Date(Date_ID);&#xA;&#x9;end&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -7887,6 +7887,10 @@ where [refTable].[Date_ID] = ?</property>
           Id="Package\Clean Data Lake and Load Dataset\Clean Data Lake"
           TopLeft="6.71428691854297,27.7764730870929" />
         <NodeLayout
+          Size="132,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data"
+          TopLeft="393.583342692682,168.770592498367" />
+        <NodeLayout
           Size="126.4,41.6"
           Id="Package\Clean Data Lake and Load Dataset\Load Data"
           TopLeft="237.161909441072,74.4823548608998" />
@@ -7924,10 +7928,6 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="132,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data"
-          TopLeft="393.583342692682,168.770592498367" />
         <EdgeLayout
           Id="Package\Clean Data Lake and Load Dataset.PrecedenceConstraints[Constraint 1]"
           TopLeft="300.361909441072,116.0823548609">
@@ -7987,55 +7987,11 @@ where [refTable].[Date_ID] = ?</property>
         <NodeLayout
           Size="145.6,41.6"
           Id="Package\Tạo bảng Fact"
-          TopLeft="739.829944572019,569.114153639875" />
+          TopLeft="739.829944572019,567.839643818079" />
         <NodeLayout
           Size="178.4,41.6"
           Id="Package\Tạo các Foreign Keys"
           TopLeft="717.534025824974,715.97409967712" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="575.019050218135,591.362962695947">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="164.810894353884,0"
-              Start="0,0"
-              End="157.310894353884,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="157.310894353884,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="809.681985198496,610.714153639875">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,105.259946037245"
-              Start="0,0"
-              End="0,97.7599460372453">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,97.7599460372453" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="467.552383608234,402.674511098037">
@@ -8070,9 +8026,212 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="575.019050218135,590.725707785049">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="164.810894353884,0"
+              Start="0,0"
+              End="157.310894353884,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="157.310894353884,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="809.681985198496,609.439643818079">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,106.534455859041"
+              Start="0,0"
+              End="0,99.0344558590411">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,99.0344558590411" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Sort"
+          TopLeft="292.142862118021,246.235297571004" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Null_Data Table"
+          TopLeft="507.857151505899,119.294119320114" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Conditional Split"
+          TopLeft="261.428575880674,119.294119320114" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Clean_Data Table"
+          TopLeft="260.000004427773,362.470593318807" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\OLE DB Source"
+          TopLeft="29,116" />
+        <EdgeLayout
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[OLE DB Source Output]"
+          TopLeft="178.6,138.447059660057">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.828575880674,0"
+              Start="0,0"
+              End="75.328575880674,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.328575880674,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[Null_Output]"
+          TopLeft="415.828575880674,140.094119320114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="92.0285756252251,0"
+              Start="0,0"
+              End="84.5285756252251,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.5285756252251,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.2679010938625,5,53.9927734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[NotNull_Output]"
+          TopLeft="339.785718999347,160.894119320114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85.3411782508902"
+              Start="0,0"
+              End="0,77.8411782508902">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.8411782508902" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.71638671875,33.1159016254451,69.4327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[Sort Output]"
+          TopLeft="340.871433272897,287.835297571004">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74.635295747803"
+              Start="0,0"
+              End="0,67.135295747803">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.135295747803" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\Null_Data Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\Clean_Data Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Clean Data Lake and Load Dataset\Load Data">
     <LayoutInfo>
@@ -8252,6 +8411,40 @@ where [refTable].[Date_ID] = ?</property>
           Id="Package\ETL data to Dimension Table\Dim_Date\Dim_Date"
           TopLeft="547.857142857143,411" />
         <EdgeLayout
+          Id="Package\ETL data to Dimension Table\Dim_Date.Paths[Sort Output]"
+          TopLeft="493.514285714286,345.742857142857">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.742857142857,65.257142857143"
+              Start="0,0"
+              End="116.742857142857,57.757142857143">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.6285714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.6285714285715"
+                    Point2="0,32.6285714285715"
+                    Point3="4,32.6285714285715" />
+                  <mssgle:LineSegment
+                    End="112.742857142857,32.6285714285715" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.742857142857,32.6285714285715"
+                    Point2="116.742857142857,32.6285714285715"
+                    Point3="116.742857142857,36.6285714285715" />
+                  <mssgle:LineSegment
+                    End="116.742857142857,57.757142857143" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\ETL data to Dimension Table\Dim_Date.Paths[OLE DB Source Output]"
           TopLeft="199.6,131.8">
           <EdgeLayout.Curve>
@@ -8341,40 +8534,6 @@ where [refTable].[Date_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL data to Dimension Table\Dim_Date.Paths[Sort Output]"
-          TopLeft="493.514285714286,345.742857142857">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.742857142857,65.257142857143"
-              Start="0,0"
-              End="116.742857142857,57.757142857143">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.6285714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.6285714285715"
-                    Point2="0,32.6285714285715"
-                    Point3="4,32.6285714285715" />
-                  <mssgle:LineSegment
-                    End="112.742857142857,32.6285714285715" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.742857142857,32.6285714285715"
-                    Point2="116.742857142857,32.6285714285715"
-                    Point3="116.742857142857,36.6285714285715" />
-                  <mssgle:LineSegment
-                    End="116.742857142857,57.757142857143" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -8393,165 +8552,6 @@ where [refTable].[Date_ID] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\ETL data to Dimension Table\Dim_Date\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Sort"
-          TopLeft="292.142862118021,246.235297571004" />
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Null_Data Table"
-          TopLeft="507.857151505899,119.294119320114" />
-        <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Conditional Split"
-          TopLeft="261.428575880674,119.294119320114" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\Clean_Data Table"
-          TopLeft="260.000004427773,362.470593318807" />
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data\OLE DB Source"
-          TopLeft="29,116" />
-        <EdgeLayout
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[OLE DB Source Output]"
-          TopLeft="178.6,138.447059660057">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="82.828575880674,0"
-              Start="0,0"
-              End="75.328575880674,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="75.328575880674,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[Null_Output]"
-          TopLeft="415.828575880674,140.094119320114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="92.0285756252251,0"
-              Start="0,0"
-              End="84.5285756252251,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="84.5285756252251,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="15.2679010938625,5,53.9927734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[NotNull_Output]"
-          TopLeft="339.785718999347,160.894119320114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,85.3411782508902"
-              Start="0,0"
-              End="0,77.8411782508902">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,77.8411782508902" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-34.71638671875,33.1159016254451,69.4327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clean Data Lake and Load Dataset\Clean_Data.Paths[Sort Output]"
-          TopLeft="340.871433272897,287.835297571004">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,74.635295747803"
-              Start="0,0"
-              End="0,67.135295747803">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.135295747803" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\Null_Data Table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Clean Data Lake and Load Dataset\Clean_Data\Clean_Data Table">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

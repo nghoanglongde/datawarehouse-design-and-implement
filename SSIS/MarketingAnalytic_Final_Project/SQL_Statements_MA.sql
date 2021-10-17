@@ -1,8 +1,8 @@
 -- CREATE DATABASE
-CREATE DATABASE Datalake_MarketingAnalytics;
+CREATE DATABASE DataLake_MarketingAnalytics;
 CREATE DATABASE DataWarehouse_MarketingAnalytics;
 
-DROP DATABASE Datalake_MarketingAnalytics;
+DROP DATABASE DataLake_MarketingAnalytics;
 DROP DATABASE DataWarehouse_MarketingAnalytics;
 
 -- OPERATIONS ON Datalake_MarketingAnalytics
