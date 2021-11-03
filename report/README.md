@@ -66,7 +66,7 @@ Link schema: https://drive.google.com/file/d/140IsMZkD-Raswhks3ap2G0lH_9pRSRcA/v
     + giao thông -> trang 377, Google Data Studio
     + store -> trang 198, Google Data Studio
     + video -> trang 150, Power BI
-    + bệnh viện
+    + bệnh viện -> hướng dẫn thao tác Power BI
     + PowerBI
 7. Chương 5 - Data Mining
     + Làm về các thuật toán phân cụm
