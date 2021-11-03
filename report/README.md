@@ -7,6 +7,8 @@ Link schema: https://drive.google.com/file/d/140IsMZkD-Raswhks3ap2G0lH_9pRSRcA/v
 2. giao thông -> báo cáo của Anh Tuân, Như Ý
 3. store -> báo cáo của Minh Nhựt, Quang Phúc
 4. video -> báo cáo của Thúy Mơ
+5. bệnh viện -> báo cáo của Hữu Lượng, Minh Quốc
+6. Power BI -> báo cáo hướng dẫn của Quốc Cường, Huy Tú
 
 # Báo cáo Outline
 1. Lời cảm ơn 
@@ -64,5 +66,7 @@ Link schema: https://drive.google.com/file/d/140IsMZkD-Raswhks3ap2G0lH_9pRSRcA/v
     + giao thông -> trang 377, Google Data Studio
     + store -> trang 198, Google Data Studio
     + video -> trang 150, Power BI
+    + bệnh viện
+    + PowerBI
 7. Chương 5 - Data Mining
     + Làm về các thuật toán phân cụm
