@@ -12,7 +12,16 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 + Link dataset: https://www.kaggle.com/jackdaoud/marketing-data
   
 ## Technologies
-+ SQL Server Analysis Services
+1. Clean, Extract, Transform, Load (ETL) data to Data Warehouse
+	+ SQL Server Integration Services (SSIS)
+	+ Python
+	+ Pandas
+2. Build Cube, Analyze data
+	+ SQL Server Analysis Services (SSAS)
+3. Build Report, Visualize data
+	+ SQL Server Reporting Services (SSRS)
+	+ Power BI
+4. Data mining
 
 ## Achivements
 1. Hiểu được sự khác biệt của các hệ thống OLTP và OLAP 
@@ -20,8 +29,10 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
     + Lí do phải xây dựng OLAP cho các hoạt động phân tích dữ liệu thay vì phân tích  trực tiếp trên các hệ thống OLTP 
 2. Hiểu quá trình ETL dữ liệu
 3. Sự khác biệt giữa relational model của relational database và dimensional model của data warehouse 
-
-(Continue)
+4. Kiến trúc của Data warehouse
+5. Biết sử dụng công cụ hỗ trợ làm sạch, xử lý và đưa dữ liệu vào data warehouse
+6. Biết sử dụng công cụ phục vụ cho việc phân tích và visualize data
+7. Áp dụng được các thuật toán máy học, đưa ra cái nhìn tổng quan về dữ liệu
 
 ## References
 1. [The Analytics Setup Guidebook](https://www.holistics.io/books/setup-analytics/a-modern-analytics-stack/)
