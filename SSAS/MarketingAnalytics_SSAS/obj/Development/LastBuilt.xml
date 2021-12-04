@@ -1,0 +1,177 @@
+﻿<Infos>
+  <Item name="SSAS.database">
+    <Time>637709260367706766</Time>
+    <Hash length="20">
+      <b>74</b>
+      <b>50</b>
+      <b>201</b>
+      <b>27</b>
+      <b>76</b>
+      <b>6</b>
+      <b>21</b>
+      <b>75</b>
+      <b>105</b>
+      <b>164</b>
+      <b>92</b>
+      <b>191</b>
+      <b>252</b>
+      <b>3</b>
+      <b>107</b>
+      <b>151</b>
+      <b>231</b>
+      <b>110</b>
+      <b>170</b>
+      <b>95</b>
+    </Hash>
+  </Item>
+  <Item name="Dim Customer.dim">
+    <Time>637709262035484965</Time>
+    <Hash length="20">
+      <b>139</b>
+      <b>26</b>
+      <b>220</b>
+      <b>238</b>
+      <b>33</b>
+      <b>116</b>
+      <b>170</b>
+      <b>5</b>
+      <b>63</b>
+      <b>72</b>
+      <b>47</b>
+      <b>19</b>
+      <b>129</b>
+      <b>67</b>
+      <b>254</b>
+      <b>57</b>
+      <b>102</b>
+      <b>204</b>
+      <b>104</b>
+      <b>39</b>
+    </Hash>
+  </Item>
+  <Item name="Data Warehouse Marketing Analytics.partitions">
+    <Time>637709261261264542</Time>
+    <Hash length="20">
+      <b>57</b>
+      <b>143</b>
+      <b>212</b>
+      <b>137</b>
+      <b>92</b>
+      <b>65</b>
+      <b>75</b>
+      <b>79</b>
+      <b>103</b>
+      <b>118</b>
+      <b>135</b>
+      <b>183</b>
+      <b>58</b>
+      <b>236</b>
+      <b>107</b>
+      <b>223</b>
+      <b>190</b>
+      <b>174</b>
+      <b>33</b>
+      <b>3</b>
+    </Hash>
+  </Item>
+  <Item name="Dim Date.dim">
+    <Time>637709262035202730</Time>
+    <Hash length="20">
+      <b>180</b>
+      <b>182</b>
+      <b>107</b>
+      <b>103</b>
+      <b>213</b>
+      <b>99</b>
+      <b>64</b>
+      <b>92</b>
+      <b>129</b>
+      <b>161</b>
+      <b>180</b>
+      <b>156</b>
+      <b>13</b>
+      <b>174</b>
+      <b>119</b>
+      <b>151</b>
+      <b>102</b>
+      <b>110</b>
+      <b>22</b>
+      <b>71</b>
+    </Hash>
+  </Item>
+  <Item name="Data Warehouse Marketing Analytics.cube">
+    <Time>637737300369217949</Time>
+    <Hash length="20">
+      <b>85</b>
+      <b>239</b>
+      <b>32</b>
+      <b>161</b>
+      <b>67</b>
+      <b>23</b>
+      <b>55</b>
+      <b>181</b>
+      <b>102</b>
+      <b>207</b>
+      <b>118</b>
+      <b>60</b>
+      <b>6</b>
+      <b>31</b>
+      <b>152</b>
+      <b>48</b>
+      <b>2</b>
+      <b>151</b>
+      <b>128</b>
+      <b>51</b>
+    </Hash>
+  </Item>
+  <Item name="Data Warehouse Marketing Analytics.dsv">
+    <Time>637709261072336860</Time>
+    <Hash length="20">
+      <b>32</b>
+      <b>137</b>
+      <b>6</b>
+      <b>58</b>
+      <b>35</b>
+      <b>180</b>
+      <b>172</b>
+      <b>105</b>
+      <b>140</b>
+      <b>42</b>
+      <b>23</b>
+      <b>45</b>
+      <b>205</b>
+      <b>63</b>
+      <b>45</b>
+      <b>172</b>
+      <b>182</b>
+      <b>164</b>
+      <b>102</b>
+      <b>179</b>
+    </Hash>
+  </Item>
+  <Item name="Data Warehouse Marketing Analytics.ds">
+    <Time>637709260897263391</Time>
+    <Hash length="20">
+      <b>118</b>
+      <b>65</b>
+      <b>160</b>
+      <b>171</b>
+      <b>9</b>
+      <b>212</b>
+      <b>84</b>
+      <b>78</b>
+      <b>105</b>
+      <b>110</b>
+      <b>180</b>
+      <b>212</b>
+      <b>46</b>
+      <b>44</b>
+      <b>24</b>
+      <b>62</b>
+      <b>124</b>
+      <b>110</b>
+      <b>94</b>
+      <b>26</b>
+    </Hash>
+  </Item>
+</Infos>
