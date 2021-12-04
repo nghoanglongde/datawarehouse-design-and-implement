@@ -23,6 +23,7 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 + Link dataset: https://www.kaggle.com/jackdaoud/marketing-data
 
 ## Technologies
+<<<<<<< HEAD
 
 + SQL Server Integration Services (SSIS)
 + SQL Server Analysis Services (SSAS)
@@ -38,6 +39,18 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 2. SSAS: Xây dựng cube và sử dụng các công cụ cần thiết để truy vấn dữ liệu
 3. SSRS: Tạo report
 4. Data Mining: Xây dựng model học máy cho bài toán phân loại và gom cụm
+=======
+1. Clean, Extract, Transform, Load (ETL) data to Data Warehouse
+	+ SQL Server Integration Services (SSIS)
+	+ Python
+	+ Pandas
+2. Build Cube, Analyze data
+	+ SQL Server Analysis Services (SSAS)
+3. Build Report, Visualize data
+	+ SQL Server Reporting Services (SSRS)
+	+ Power BI
+4. Data mining
+>>>>>>> 3fa8f5cef6c40cbf54beaf3cfb0e898fd82aae2c
 
 ## Achivements
 
@@ -48,11 +61,19 @@ Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data wareho
 + Lí do phải xây dựng OLAP cho các hoạt động phân tích dữ liệu thay vì phân tích trực tiếp trên các hệ thống OLTP
 
 2. Hiểu quá trình ETL dữ liệu
+<<<<<<< HEAD
 
 3. Sự khác biệt giữa relational model của relational database và dimensional model của data warehouse
 4. Truy vấn dữ liệu đã chiều sử dụng ngôn ngữ MDX
 5. Sử dụng được các công cụ tạo report như SSRS, Power BI
 6. Xây dựng model học máy cho bài toán phân loại (Decision Trees) và gom cụm (K-means)
+=======
+3. Sự khác biệt giữa relational model của relational database và dimensional model của data warehouse 
+4. Kiến trúc của Data warehouse
+5. Biết sử dụng công cụ hỗ trợ làm sạch, xử lý và đưa dữ liệu vào data warehouse
+6. Biết sử dụng công cụ phục vụ cho việc phân tích và visualize data
+7. Áp dụng được các thuật toán máy học, đưa ra cái nhìn tổng quan về dữ liệu
+>>>>>>> 3fa8f5cef6c40cbf54beaf3cfb0e898fd82aae2c
 
   
 ## References
