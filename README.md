@@ -3,11 +3,6 @@
 ## Introduction
 
 Repo này lưu trữ toàn bộ data, source code cho đồ án môn Data warehouse and OLAP (IS217), vui lòng gửi message cho một trong 2 contact-information bên dưới nếu có bất kỳ thắc mắc nào.
-
-  
-
-**Lưu ý:** Không sao chép dưới mọi hình thức
-
   
 
 ## Team members
